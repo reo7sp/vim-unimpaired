@@ -178,12 +178,12 @@ vnoremap <silent> <Plug>(unimpaired-context-next)     :<C-U>exe 'normal! gv'<Bar
 onoremap <silent> <Plug>(unimpaired-context-previous) :<C-U>call <SID>ContextMotion(1)<CR>
 onoremap <silent> <Plug>(unimpaired-context-next)     :<C-U>call <SID>ContextMotion(0)<CR>
 
-exe s:Map('n', '[n', '<Plug>(unimpaired-context-previous)')
-exe s:Map('n', ']n', '<Plug>(unimpaired-context-next)')
-exe s:Map('x', '[n', '<Plug>(unimpaired-context-previous)')
-exe s:Map('x', ']n', '<Plug>(unimpaired-context-next)')
-exe s:Map('o', '[n', '<Plug>(unimpaired-context-previous)')
-exe s:Map('o', ']n', '<Plug>(unimpaired-context-next)')
+"exe s:Map('n', '[n', '<Plug>(unimpaired-context-previous)')
+"exe s:Map('n', ']n', '<Plug>(unimpaired-context-next)')
+"exe s:Map('x', '[n', '<Plug>(unimpaired-context-previous)')
+"exe s:Map('x', ']n', '<Plug>(unimpaired-context-next)')
+"exe s:Map('o', '[n', '<Plug>(unimpaired-context-previous)')
+"exe s:Map('o', ']n', '<Plug>(unimpaired-context-next)')
 
 nnoremap <silent> <Plug>unimpairedContextPrevious :<C-U>call <SID>Context(1)<CR>
 nnoremap <silent> <Plug>unimpairedContextNext     :<C-U>call <SID>Context(0)<CR>
@@ -290,10 +290,10 @@ nnoremap <silent> <Plug>unimpairedMoveDown          :<C-U>call <SID>Move('+',v:c
 noremap  <silent> <Plug>unimpairedMoveSelectionUp   :<C-U>call <SID>MoveSelectionUp(v:count1)<CR>
 noremap  <silent> <Plug>unimpairedMoveSelectionDown :<C-U>call <SID>MoveSelectionDown(v:count1)<CR>
 
-exe s:Map('n', '[e', '<Plug>(unimpaired-move-up)')
-exe s:Map('n', ']e', '<Plug>(unimpaired-move-down)')
-exe s:Map('x', '[e', '<Plug>(unimpaired-move-selection-up)')
-exe s:Map('x', ']e', '<Plug>(unimpaired-move-selection-down)')
+"exe s:Map('n', '[e', '<Plug>(unimpaired-move-up)')
+"exe s:Map('n', ']e', '<Plug>(unimpaired-move-down)')
+"exe s:Map('x', '[e', '<Plug>(unimpaired-move-selection-up)')
+"exe s:Map('x', ']e', '<Plug>(unimpaired-move-selection-down)')
 
 " Section: Option toggling
 
