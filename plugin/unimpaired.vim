@@ -73,7 +73,7 @@ call s:MapNextFamily('a', '' , 'argument')
 call s:MapNextFamily('b', 'b', 'buffer')
 call s:MapNextFamily('l', 'l', 'll')
 call s:MapNextFamily('q', 'c', 'cc')
-call s:MapNextFamily('t', 't', 'trewind')
+call s:MapNextFamily('t', 'tab', '')
 
 function! s:entries(path) abort
   let path = substitute(a:path,'[\\/]$','','')
