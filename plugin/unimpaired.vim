@@ -74,10 +74,10 @@ call s:MapNextFamily('b', 'b', 'buffer')
 call s:MapNextFamily('l', 'l', 'll')
 call s:MapNextFamily('q', 'c', 'cc')
 
-nnoremap [t <cmd>tabprevious
-nnoremap ]t <cmd>tabnext
-nnoremap [T <cmd>tabfirst
-nnoremap ]T <cmd>tablast
+nnoremap [t <cmd>tabprevious<cr>
+nnoremap ]t <cmd>tabnext<cr>
+nnoremap [T <cmd>tabfirst<cr>
+nnoremap ]T <cmd>tablast<cr>
 
 function! s:entries(path) abort
   let path = substitute(a:path,'[\\/]$','','')
